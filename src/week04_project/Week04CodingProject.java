@@ -318,7 +318,10 @@ public class Week04CodingProject {
 	
 	// Problem 13 Method
 	public static double[] normalizeArray(double[] arr) {
-		
+		// This method takes in an array of doubles, and returns a normalized version of the array
+		// A normalized array has the following property: sqrt((sum of elements)^2) = 1 
+		// The main method of normalizing an array is computing the sum of the square of each individual element, 
+		// square rooting that sum, and then dividing each element of the array by that value (called the root sum of squares).
 		
 		// Create a new array the same length as the input array
 		double[] normalizedArray = new double[arr.length];
@@ -339,6 +342,7 @@ public class Week04CodingProject {
 			normalizedArray[i] = arr[i]/root_sum_of_squares;
 		}
 		
+		// return normalized array 
 		return normalizedArray;
 		
 	}
@@ -346,6 +350,7 @@ public class Week04CodingProject {
 	// Problem 12 Method
 	public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
 		
+		// Return true if isHotOutside == true and moneyInPocket > 10.5, false otherwise
 		if (isHotOutside && moneyInPocket > 10.5) {
 			return true;
 		} else {
@@ -397,6 +402,7 @@ public class Week04CodingProject {
 	// Problem 8 Method
 	public static String returnFullName(String firstName, String lastName) {
 		
+		// Concatenate string with space in between
 		String fullName = firstName + " " + lastName;
 		
 		return fullName;
@@ -429,10 +435,10 @@ public class Week04CodingProject {
 	}
 	
 	// I've made this method to make my code above more readable, and since I was copy/pasting similar code more than once
-		public static void printDoubleArrayContents(double[] doubleArray) {
-			for (double num : doubleArray) {
-				System.out.print(num + " ");
-			}
+	public static void printDoubleArrayContents(double[] doubleArray) {
+		for (double num : doubleArray) {
+			System.out.print(num + " ");
 		}
+	}
 	
 }
