@@ -289,7 +289,7 @@ public class Week04CodingProject {
 		boolean isHotOutside = true;
 		double moneyInPocket = 10.7;
 		
-		System.out.println("isHoutOutside: " + isHotOutside);
+		System.out.println("isHotOutside: " + isHotOutside);
 		System.out.println("moneyInPocket: " + moneyInPocket);
 		System.out.println("willBuyDrink: " + willBuyDrink(isHotOutside,moneyInPocket));
 		System.out.println(linesep);
